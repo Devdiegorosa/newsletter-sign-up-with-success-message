@@ -23,10 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Adiciona um ouvinte de evento para o clique no botão de inscrição
-  subscribeBtn.addEventListener("submit", (event) => {
-    if (!valid) {
+  subscribeBtn.addEventListener("click", (event) => {
         event.preventDefault();
-      }
 
     if (!emailRegex.test(emailInput.value)) {
       errorMessage.textContent = "Valid email required";
